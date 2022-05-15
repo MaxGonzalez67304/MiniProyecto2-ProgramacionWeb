@@ -1,0 +1,34 @@
+<div>
+    <h1>Registro</h1>
+    <form [formGroup]="forma" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email"[ngClass]="{ 'is-invalid': !forma.get('correo')?.valid }" type="text"
+            placeholder="Correo electronico" formControlName="correo">
+            <div *ngIf="forma.controls['correo'].errors?.['required']" class="invalidfeedback">
+                Correo obligatorio
+            </div>
+            <div *ngIf="forma.controls['correo'].errors?.['email']" class="invalid-feedback">
+                El correo no tiene el formato correcto
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="text">Genero</label>
+            <select id="sex" class="form-control" name="Hombre">
+                <option>Hombre</option>
+                <option>Mujer</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" id="fn" name="fn">
+        </div>
+    </form>
+    <button class="btn btn-primary" (click)="registrar()">Registrar</button>
+</div>

@@ -1,0 +1,10 @@
+@media (max-width:991px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul a {
+        text-align: center;
+    }
+
+    
+}

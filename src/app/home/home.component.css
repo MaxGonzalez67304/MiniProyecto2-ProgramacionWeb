@@ -1,0 +1,63 @@
+.bg-home {
+    background-image: url('../../assets/imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 80%; 
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 85px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 5px 5px 5px darkred;
+    text-decoration: underline;
+}
+
+p{
+    margin: 0 auto;
+    color: white;
+    text-shadow: 3px 3px 3px black; 
+    font-size: 32px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#p1{
+
+    margin-top: 5px;
+    color: greenyellow;
+    text-shadow: 3px 3px 3px black; 
+    font-size: 26px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#b1{
+    text-align: center;
+    position: absolute;
+    left: 46%;
+}
+
+#v1{
+    position: relative;
+    max-width: 500px;
+    border: 6px solid black;
+    border-radius: 5px;
+}
+
+#v2{
+    position: absolute;
+    max-width: 500px;
+    left: 60%;
+    border: 6px solid black;
+    border-radius: 5px;
+}
+
+@media (max-width:991px) {
+    h1 p a img{
+        flex-direction: column;
+    }
+    h1 p a img{
+        text-align: center;
+    }
+}

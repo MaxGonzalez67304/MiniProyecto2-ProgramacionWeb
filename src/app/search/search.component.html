@@ -1,0 +1,9 @@
+<div id="container" class="row animated fadeIn fast" *ngIf="indice == -1">
+
+    <img src="assets/imagenes/error.jpg" width="40%" style="margin: 0 auto; width: 30%;">
+
+    <p style="text-align:center;">No existen resultados para la búsqueda {{nombreh}}.</p> 
+
+</div>
+
+<app-unheroe *ngIf="indice != -1" [heroe]='miheroe'></app-unheroe>

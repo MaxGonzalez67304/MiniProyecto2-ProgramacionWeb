@@ -1,0 +1,13 @@
+<h1 class="text-center">Heroes <small>Marvel y Dc</small></h1>
+
+<div class="card-columns">
+    <div class="card" *ngFor= "let i of misHeroes, let h=index">
+      <img src="{{i.img}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{i.nombre}}</h5>
+        <p class="bio" >{{i.bio.substr(0,110)}} ...</p>
+        <p class="card-text"><small class="text-muted">{{i.aparicion}}</small></p>
+      </div>
+      <a [routerLink]="['/heroe',h]" class="mb-3 btn btn-outline-primary btn-block">VerMas</a>
+    </div>
+</div>
